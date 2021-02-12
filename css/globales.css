@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ----------------------GLOBALES---------------------- */
 
 html{
@@ -111,4 +112,119 @@ img{
 .boton-secundario:hover{
     cursor: pointer;
     background: #784d3cdc;
+=======
+/* ----------------------GLOBALES---------------------- */
+
+html{
+    font-size: 62.5%;/* Reset para REM*/
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-parrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuente-heading);
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ---------------------Variables--------------------- */
+
+:root{
+    --fuente-heading: 'PT Sans', sans-serif;
+    --fuente-parrafos: 'Open Sans', sans-serif;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --gris: #e1e1e1;
+    --negro: #000000;
+}
+
+/* ---------------------Utilidades--------------------- */
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuente-heading);
+    color: var(--blanco);
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: none;
+    transition: background .2s ease;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton-primario{
+    background: var(--negro);
+}
+
+.boton-primario:hover{
+    cursor: pointer;
+    background: #000000e1;
+}
+
+.boton-secundario{
+    background: var(--primario);
+}
+
+.boton-secundario:hover{
+    cursor: pointer;
+    background: #784d3cdc;
+>>>>>>> 27e3bd288768e4e189584f58afde59f7122e199d
 }
